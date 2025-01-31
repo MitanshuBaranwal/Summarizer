@@ -14,15 +14,15 @@
   ```
 3. Set up environment variables:
   Create a .env file and add:
-  ```
+  ```bash
   GROQ_API_KEY=<your-api-key>
   ```
 4. Apply migrations:
-  ```
+  ```bash
   python manage.py migrate
   ```
 5. Run the server:
-  ```
+  ```bash
   python manage.py runserver
   ```
 
@@ -30,17 +30,17 @@ Usage
 Authentication
 Obtain an access token:
 
-bash
-```
+
+```bash
 curl -X POST http://127.0.0.1:8000/token/ -H "Content-Type: application/json" -d '{"username": "your_user", "password": "your_password"}'
 ```
 Generate Summary
-bash
-```
+
+```bash
 curl -X POST http://127.0.0.1:8000/generate-summary/ -H "Authorization: Bearer <token>" -H "Content-Type: application/json" -d '{"text": "Your input text"}'
 ```
 Generate Bullet Points
-bash
-```
+
+```bash
 curl -X POST http://127.0.0.1:8000/generate-bullet-points/ -H "Authorization: Bearer <
 ```
