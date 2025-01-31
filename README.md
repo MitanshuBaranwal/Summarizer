@@ -30,10 +30,10 @@ Usage
 Authentication
 Obtain an access token:
 
-
-   ```bash
-   curl -X POST http://127.0.0.1:8000/token/ -H "Content-Type: application/json" -d '{"username": "your_user", "password": "your_password"}'
-   ```
+   
+      ```bash
+      curl -X POST http://127.0.0.1:8000/token/ -H "Content-Type: application/json" -d '{"username": "your_user", "password": "your_password"}'
+      ```
 Generate Summary
 
    ```bash
